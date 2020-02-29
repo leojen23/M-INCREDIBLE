@@ -1,0 +1,185 @@
+
+:root{
+    --color-primary:#B00A1B;
+    --color-secondary:	#E69F26; 
+    --color-shadow:rgba(104, 104, 104,0.8);
+}
+*,
+*::after,
+*::before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: white;
+list-style: none;
+text-decoration: none;
+font-family: 'Julius Sans One' ;
+}
+main{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(74,74,71);
+    background: linear-gradient(0deg, rgba(74,74,71,1) 0%, rgba(143,142,138,1) 24%, rgba(255,253,245,1) 86%);
+}
+
+/* DISPLAY LEFT START */
+.display-left{
+    width: 100%;
+}
+/* NAVBAR START*/
+.navbar{
+    width: 100%;
+    height: 100px;
+}
+    .navbar-listItems{
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        background-color: black;
+    }
+        .nav-items{
+            width: 100%;
+            text-transform: uppercase;
+            text-align: center;
+        }
+            .nav-items:hover{
+                background-color: yellow;
+                box-shadow: 0px 5px 5px var(--color-shadow);
+            }
+        .nav-links{
+            display: block;
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+        }
+            .nav-links:hover{
+                color: black;
+                border: 1px solid black;
+                font-size:1.1rem
+             }
+
+/* NAVBAR END */
+
+/* HERO-SECTION START */
+
+.hero-section{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 3rem;
+    justify-content: center;
+}
+    .hero-heading{
+        color: var(--color-primary);
+        font-size: 2.7rem;
+        text-align: center;
+        text-shadow:0px 0px 1px black;
+    }
+    .logo-container{
+        display: flex;
+        justify-content: center;
+    }
+    .video-container{
+        display: flex;
+        justify-content: center;
+    }
+
+/* HERO SECTION END */
+
+/* DISPLAY LEFT END */
+
+/* RIGHT DISPLAY START */
+
+.display-right{
+    width: 100%;
+    background-image: url("../IMG/Family\ pic.jpg");
+    background-size: cover;
+}
+
+/* FRAME START */
+    .frame{
+        width: 100%;
+        height: 100%;
+        background-color:var(--color-primary);
+    }
+    #frame-incred{
+        display: none;   
+    }
+    #frame-elastic{
+        display: none;
+    }
+    #frame-violet{
+        display: none;
+    }
+    #frame-dash{
+        display:none;
+    }
+    #frame-jack{
+        display: none;
+    }
+    .photo-container{
+        width: 100%;
+        display: grid;
+        grid-auto-flow: row;
+    }
+        .photo-container img{
+            max-width: 100%;
+        }
+    .name-tag{
+        padding: 1rem;
+        text-align:center;
+        color: yellow;
+        letter-spacing: 1px;
+        background-color: black;
+    }
+    /* POWERS CONTAINER START */
+    .powers-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        column-gap: 80px;
+        row-gap: 15px;
+    }
+    .powers{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+        .power{
+            font-size: 0.9rem;
+        }
+        progress {
+            border: 1px solid black;
+            width: 100px;
+            height: 12px;
+            background: black;  
+        }
+
+        progress {
+            background: rgb(205,42,10);
+            background: linear-gradient(90deg, rgba(205,42,10,1) 11%, rgba(237,191,36,1) 70%, rgba(255,231,0,1) 100%);
+        }
+  
+        progress::-webkit-progress-value {
+            background: rgb(205,42,10);
+            background: linear-gradient(90deg, rgba(205,42,10,1) 11%, rgba(237,191,36,1) 70%, rgba(255,231,0,1) 100%);
+        }
+  
+        progress::-moz-progress-bar {
+            background: black;
+        }
+  
+        progress::-webkit-progress-value {
+            background: rgb(205,42,10);
+            background: linear-gradient(90deg, rgba(205,42,10,1) 11%, rgba(237,191,36,1) 70%, rgba(255,231,0,1) 100%);
+        }
+  
+        progress::-webkit-progress-bar {
+            background: black;
+        }
+        /* POWERS CONTAINER END */
+
+        /* FRAME END */
+
+        /* RIGHT DISPLAY END */
